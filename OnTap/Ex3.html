@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính</title>
+</head>
+<body>
+    <!-- <div class="calculator">
+        <form action="">
+            <p>Nhập số thứ nhất: <input type="text" id="number1" value="0"></p>
+            <p>Nhập số thứ hai:  <input type="text" id="number2" value="0"></p>
+            <div>
+                <input type="button" id="phepcong" value="+"  onclick="onClick(); event.preventDefault()">
+                <!-- <input type="button" id="pheptru" value="-"  onClick="TinhToan();">
+                <input type="button" id="phepnhan" value="*"  onClick="TinhToan();">
+                <input type="button" id="phepchia" value="/"  onClick="TinhToan();"> -- >
+            </div>
+            
+            <p>Kết quả: <span id="result"></span></p>
+        </form>
+    </div> -->
+
+    <form>
+        Nhập số thứ nhất: <input type="text" id="number1">
+        <br> <br>
+        Nhập số thứ hai: <input type="text" id="number2">
+        <br> <br>
+        Lựa chọn phép tính: 
+        <input type="button" id="phepCong" value="+"   onclick="onClick(), event.preventDefault()">
+        <input type="button" id="phepTru" value="-"   onclick="onClick(), event.preventDefault()">
+        <input type="button" id="phepNhan" value="*"   onclick="onClick(), event.preventDefault()">
+        <input type="button" id="phepChia" value="/"   onclick="onClick(), event.preventDefault()">
+    </form>
+    <div id="result"></div>
+
+    <script>
+        // function onClick() {
+        //     let number1 = document.getElementById("number1").value;
+        //     let number2 = document.getElementById("number2").value;
+        //     let phepCong = document.getElementById("phepcong").value;
+        //     let result = document.getElementById("result");
+        //     // let phepTru = document.getElementById("pheptru").value;
+        //     // let phepNhan = document.getElementById("phepnhan").value;
+        //     // let phepChia = document.getElementById("phepchia").value;
+        //     phepCong.onclick = function() {
+        //         document.getElementById("result").innerHTML = 'access';
+        //         console.log('access')
+        //     }
+        // }
+
+        
+
+        function onClick() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+            let result = document.getElementById('result');
+            let phepCong = document.getElementById('phepCong').value;
+            let phepTru = document.getElementById("phepTru").value;
+            let phepNhan = document.getElementById("phepNhan").value;
+            let phepChia = document.getElementById("phepChia").value;
+
+            let sum = parseInt(number1) + parseInt(number2);
+            let difference = parseInt(number1) - parseInt(number2);
+            let product = parseInt(number1) + parseInt(number2);
+            let quotient = parseInt(number1) + parseInt(number2);
+
+            console.log(phepTinh);
+
+            // result.innerHTML = sum;
+        }
+    </script>
+</body>
+</html>
