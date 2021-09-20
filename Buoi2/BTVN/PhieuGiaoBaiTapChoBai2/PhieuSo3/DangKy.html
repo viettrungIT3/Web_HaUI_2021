@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .form {
+            width: 600px;
+            margin: auto;
+            /* border: 1px solid; */
+            padding: 0 10px;
+            border-top: none;
+            border-left: 1px solid #3333;
+            position: relative;
+        }
+
+        .form::after {
+            content: "";
+            position: absolute;
+            right: -10px;
+            top: 0;
+            width: 10px;
+            height: 100%;
+            background-color: white;
+            background-image: linear-gradient(to right, rgb(77, 77, 77) , white);
+        }
+
+        .table {
+            width: 100%;
+            border: none;
+            color: green;
+            font: 16px;
+            border: 1px solid rgb(112, 112, 112);
+            border-spacing: 0;
+        }
+
+        tr,
+        td {
+            border: 1px solid rgb(112, 112, 112);
+            background-color: rgb(209, 253, 209);
+            padding: 2px;
+            margin: 0;
+        }
+
+        .tb__left {
+            width: 35%;
+        }
+
+        .tb__right .tb__right--input {
+            /* width: 95%; */
+            margin: 1px;
+        }
+
+        .btn {
+            background-color: rgb(204, 204, 204);
+            border-top: none;
+            border-left: none;
+            padding: 2px 6px;
+            margin: 2px 0;
+        }
+
+        input {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+        <table class="table" border="1" cellsoacing="0">
+            <caption>
+                <h2>Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+            </caption>
+            <tr>
+                <td class="tb__left">Họ và tên</td>
+                <td class="tb__right">
+                    <input class="tb__right--input" style="width: 80%;" type="text" name=""
+                        placeholder="Nguyễn Ngọc Quỳnh Nga" id="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tb__left">Địa chỉ</td>
+                <td class="tb__right">
+                    <input class="tb__right--input" style="width: 65%;" type="text" name=""
+                        placeholder="2Bia Hùng Vương, Q10" id="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tb__left">Điện thoại</td>
+                <td class="tb__right">
+                    <input class="tb__right--input" style="width: 50%;" type="text" name="" placeholder="0909097506"
+                        id="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tb__left">Phái</td>
+                <td class="tb__right">
+                    <input type="radio" name="gender" id="" value="male"> Nam
+                    <input type="radio" name="gender" id="" value="female"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="tb__left">Nghề nghiệp</td>
+                <td class="tb__right">
+                    <input list="jobs" style="width: 25%;">
+                    <datalist id="jobs">
+                        <option value="Giáo viên"></option>
+                        <option value="Học sinh"></option>
+                        <option value="Sinh viên"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb__left">Chọn sản phẩm tham gia</td>
+                <td class="tb__right">
+                    <select name="" id="" multiple size="4">
+                        <option value="">Kem đánh răng</option>
+                        <option value="">Bột giặt</option>
+                        <option value="">Dầu gội đầu</option>
+                        <option value="">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb__left">Số người dự đoán tham gia</td>
+                <td class="tb__right">
+                    <input class="tb__right--input" style="width: 25%;" type="number" name="" placeholder="250000"
+                        id="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" class="btn">Đồng ý</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

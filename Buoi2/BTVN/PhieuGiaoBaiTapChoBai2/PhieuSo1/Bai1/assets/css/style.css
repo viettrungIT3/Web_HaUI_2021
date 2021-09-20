@@ -1,0 +1,33 @@
+/* Reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+}
+
+/* Header  */
+
+header img {
+    width: 50%;
+}
+
+/* main  */
+.hader__title {
+    margin: 8px 0;
+}
+
+.body {
+    display: flex;
+}
+.body .body__img {
+    width: 25%;
+}
+.body .body__text {
+    padding: 8px;
+    font-size: 14px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 300px;
+            margin: 50px auto;
+            border: 1px solid;
+        }
+
+        .login {
+            padding: 8px;
+        }
+
+        .login__header {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .login__item {
+            padding: 4px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 50px;
+        }
+
+        .btn__sub {
+            padding: 2px 8px;
+            border: 1px solid rgba(0, 0, 255, 0.6);
+        }
+        .btn__sub:active {
+            border: 2px solid rgba(0, 0, 255, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form action="">
+            <h3 class="login__header">ĐĂNG NHẬP DIỄN ĐÀN</h3>
+
+            <div class="login__item">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" placeholder="huyhien">
+            </div>
+
+            <div class="login__item">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" placeholder="******">
+            </div>
+
+
+            <div class="btn login__item">
+                <button class="btn__sub" type="submit">Đăng nhập</button>
+                <button class="btn__sub" type="reset">Phục hồi</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
