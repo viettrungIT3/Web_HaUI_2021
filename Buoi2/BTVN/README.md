@@ -17,5 +17,5 @@
 
 <br>
 
-4. Phiếu số 4: https://viettrungit3.github.io/Web_HaUI_2021/Buoi2/BTVN/PhieuGiaoBaiTapChoBai2/PhieuSO4/TongHop.html
+4. Phiếu số 4: https://viettrungit3.github.io/Web_HaUI_2021/Buoi2/BTVN/PhieuGiaoBaiTapChoBai2/PhieuSo4/TongHop.html
     
