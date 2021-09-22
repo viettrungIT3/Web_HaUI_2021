@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            line-height: 1.25;
+            border: 2px solid rgba(243, 243, 243, 0.6);
+            box-shadow: 8px 8px 8px -2px #333;
+        }
+
+        .title {
+            margin: 8px;
+            color: green;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container .container__box {
+            padding: 8px;
+        }
+
+        .container .box {
+            margin-top: 12px;
+            margin-bottom: 2px;
+            padding-left: 100px;
+            background-color: #CCCCCC;
+            color: #0000CC;
+            word-spacing: 8px;
+        }
+
+        .container .box p {
+            padding-left: 50px;
+        }
+
+        .text--red {
+            color: #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h2 class="title">
+            Định dạng văn bản
+        </h2>
+        <div class="container__box">
+
+            <!-- Chemistry -->
+            <div class="Chemistry">
+                <b><u>Hóa học:</u></b> <i>Nước</i> <span class="text--red"> H<sub>2</sub>0</span>; <i>Axit Sunfuric</i>
+                <span class="text--red">H<sub>2</sub>SO<sub>4</sub></span>
+            </div>
+
+            <!-- Maths -->
+            <div><b><u>Toán học:</u></b> <i>Phương trình bậc 2:</i> <span class="text--red"> ax<sup>2</sup> + bx + c =
+                    0</span></div>
+
+            <!-- Informatics -->
+            <div>
+                <b><u>Tin học:</u></b> <i>Vòng lặp For:</i> <br>
+                <div class="box">
+                    For i = 0 To 10
+                    <p> Tong = Tong + 1</p>
+                    Next
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
