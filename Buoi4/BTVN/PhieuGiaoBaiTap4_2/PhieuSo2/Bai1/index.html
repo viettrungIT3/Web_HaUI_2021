@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            border-top: 1px solid #9999;
+        }
+
+        .title {
+            margin-top: 20px;
+            padding: 0;
+            background-color: rgb(228, 148, 91);
+            border-bottom: 3px solid;
+        }
+
+        .container__table {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        table, tr, th, td {
+            border: 1px solid orange;
+            /* padding: 0; */
+            border-collapse: collapse;            
+        }
+
+        .container__table thead {
+            background-color: rgb(252, 107, 55);
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">DANH SÁCH SINH VIÊN</h2>
+        <table class="container__table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã số sinh viên</th>
+                    <th align="center">Họ tên</th>
+                    <th>Ngày sinh</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>310110045</td>
+                    <td>Nguyễn Hiếu Tâm</td>
+                    <td>24/08/99</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>310110045</td>
+                    <td>Nguyễn Hiếu Tâm</td>
+                    <td>24/08/99</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>310110045</td>
+                    <td>Nguyễn Hiếu Tâm</td>
+                    <td>24/08/99</td>
+                </tr>
+                <tr>
+                    <td>... </td>
+                    <td>... </td>
+                    <td>... </td>
+                    <td>... </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

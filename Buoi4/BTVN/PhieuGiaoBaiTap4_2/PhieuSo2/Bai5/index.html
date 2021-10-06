@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        .menu {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+        }
+
+        .item {
+            list-style: none;
+            padding: 12px ;
+            color: #fff;
+            border-bottom: 1px solid #666;
+            background-color: blue;
+        }
+
+        .item:hover {
+            background-color: red;
+        }
+
+        .sub_menu {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            /* padding: 12px; width: 100px; */
+            background-color: blue;
+            display: none;
+        }
+        
+        .sub_menu .sub_item {
+            padding: 12px ;
+            list-style: none;
+            width: 150px;
+        }
+        
+        .item:hover .sub_menu {
+            background-color: red;
+            display: block;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <nav>
+            <ul class="menu">
+                <li class="item">Chính trị-xã hội 
+                    <ul class="sub_menu">
+                        <li class="sub_item">Thư viện pháp luật</li>
+                        <li class="sub_item">Sống khỏe</li>
+                        <li class="sub_item">Pháp luật</li>
+                    </ul>
+                </li>
+                <li class="item">Thế giới 
+                </li>
+                <li class="item">Nhịp sống trẻ </li>
+                <li class="item">Giáo dục </li>
+                <li class="item">Kinh tế</li>
+            </ul>
+        </nav>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        .item {
+            list-style: none;
+            padding: 12px ;
+            color: #fff;
+            border-right: 1px solid #666;
+            background-color: blue;
+        }
+
+        .item:hover {
+            background-color: red;
+        }
+
+        .sub_menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: blue;
+        }
+        
+        .item:hover .sub_menu {
+            display: flex;
+            background-color: red;
+        }
+        
+        .sub_menu .sub_item {
+            padding: 12px ;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <nav>
+            <ul class="menu">
+                <li class="item">Chính trị-xã hội </li>
+                <li class="item">Thế giới 
+                    <ul class="sub_menu">
+                        <li class="sub_item">Thư viện pháp luật</li>
+                        <li class="sub_item">Sống khỏe</li>
+                        <li class="sub_item">Pháp luật</li>
+                    </ul>
+                </li>
+                <li class="item">Nhịp sống trẻ </li>
+                <li class="item">Giáo dục </li>
+                <li class="item">Kinh tế</li>
+            </ul>
+        </nav>
+    </main>
+
+</body>
+
+</html>
