@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.2 Giới thiệu và Javascript</title>
+</head>
+
+<body>
+    <h2>Javascript Functions</h2>
+
+    <p>Ví dụ này gọi đến phương thức fullName của đối tượng person thông qua đối tượng person1</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let person1 = {
+            firstName: "Tuan",
+            lastName: "Le"
+        }
+
+        let person = {
+            fullName: function (city, country) {
+                return this.firstName + " " + this.lastName + ", " + city + ", " + country;
+            }
+        }
+
+        let x = person.fullName.call(person1, "Ha Noi", "Viet Nam");
+
+        document.getElementById("demo").innerHTML = x;
+
+    </script>
+
+
+    <div> <br> <br><br>
+        <a href="https://drive.google.com/file/d/12_zOTy2x8vxnEZCkUtVvysrXIR7JVFeh/view?usp=sharing">Link video</a>
+        <br>
+        <a href="https://www.w3schools.com/js/js_functions.asp">Chi tiết tại w3schools</a>
+    </div>
+</body>
+
+</html>

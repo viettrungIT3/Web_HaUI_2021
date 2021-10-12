@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.2 Giới thiệu và Javascript</title>
+</head>
+
+<body>
+
+    <p>Click the button to get a time-based greeting:</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+
+        let greeting;
+        let time = new Date().getHours();
+
+        if (time < 10) {
+            greeting = "Good morning";
+        } else if (time < 20) {
+            greeting = "Good day"
+        } else {
+            greeting = "Good evening"
+        }
+        
+        function myFunction() {
+            document.getElementById("demo").innerHTML = greeting;
+        }
+
+    </script>
+
+
+    <div> <br> <br><br>
+        <a href="https://drive.google.com/file/d/1AxVcX_SDQk5ESR4uszNl0eMYG_rbIuaM/view?usp=sharing">Link video</a>
+        <br>
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_elseif">Chi tiết tại w3schools</a>
+    </div>
+</body>
+
+</html>

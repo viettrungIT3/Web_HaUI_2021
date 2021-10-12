@@ -6,7 +6,7 @@
 1. PHẦN 3: BIẾN, KIỂU DỮ LIỆU, HÀM TRONG JAVASCRIPT
 1. PHẦN 4: CÁC CÂU LỆNH TRONG JAVASCRIPT
 
-
+# [Link tài liệu + video: ](https://drive.google.com/drive/folders/1pd4eIJP2MPT-GJQjs6bamaoB_DOZF5Vs)
 
 ## Phần 1: TỔNG QUAN VỀ CSS
 ### Javascript là gì?

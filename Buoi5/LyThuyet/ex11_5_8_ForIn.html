@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.2 Giới thiệu và Javascript</title>
+</head>
+
+<body>
+
+    <h2>JavaScript For In Loop</h2>
+    <p>Click the button to loops through the properties of an object:</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        let person = {
+            fname: "John",
+            lname: "Doe",
+            age: 25
+        };
+
+        let text = "";
+        function myFunction() {
+            for (let key in person) {
+                text += person[key] + " ";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+
+
+    </script>
+
+
+    <div> <br> <br><br>
+        <a href="https://drive.google.com/file/d/1QmtDu7XgG5fN795a9KGE5gUuMXK4pvgW/view?usp=sharing">Link video</a>
+        <br>
+        <a href="https://www.w3schools.com/js/js_loop_forin.asp">Chi tiết tại w3schools</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.2 Giới thiệu và Javascript</title>
+</head>
+
+<body>
+
+    <p>This example uses the weekday number to calculate the weekday name:</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // The getDay() method returns the weekday as a number between 0 and 6.
+
+        // (Sunday=0, Monday=1, Tuesday=2 ..)
+
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Today is " + day;
+        }
+
+    </script>
+
+
+    <div> <br> <br><br>
+        <a href="https://drive.google.com/file/d/1AxVcX_SDQk5ESR4uszNl0eMYG_rbIuaM/view?usp=sharing">Link video</a>
+        <br>
+        <a href="https://www.w3schools.com/js/js_switch.asp">Chi tiết tại w3schools</a>
+    </div>
+</body>
+
+</html>
