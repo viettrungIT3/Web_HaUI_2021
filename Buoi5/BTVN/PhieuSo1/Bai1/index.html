@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <label for="day">Ngày tháng năm sinh: </label>
+        <select name="day" id="day"></select>
+        <label for=""> tháng: </label>
+        <select name="month" id="month"></select>
+        <label for=""> năm: </label>
+        <select name="year" id="year"></select>
+    </div>
+
+    <script>
+        let day = document.getElementById("day");
+        let month = document.getElementById("month");
+        let year = document.getElementById("year");
+
+        for (let i = 1900; i < 2200; i++) {
+            let option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+            year.appendChild(option);
+        }
+
+        for (let i = 1; i <= 12; i++) {
+            let option = document.createElement("option");
+            option.value =i;
+            option.textContent = i;
+            month.appendChild(option);
+        }
+
+        for (let i = 1; i <= 31; i++) {
+            let option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+            day.appendChild(option);
+        }
+    </script>
+</body>
+
+</html>
