@@ -41,8 +41,8 @@
 
 ```css
     h1 {
-        text-align:center;
-        color:red;
+    text-align:center;
+    color:red;
     }
 ```
 
@@ -291,7 +291,7 @@ chân, ...
 ```
 
 #### 2. text-align: Sử dụng thuộc tính này để căn lề cho văn bản
-[Tham khảo thêm tại W3](https://www.w3schools.com/cssref/pr_text_text-align.ASP)
+[Tham khảo tại W3](https://www.w3schools.com/cssref/pr_text_text-align.ASP)
 
 ```css
     p {
@@ -310,7 +310,7 @@ chân, ...
 
 
 #### 3. text-indent: Sử dụng thuộc tính này để thụt đầu đoạn văn bản.
-[Tham khảo thêm tại W3](https://www.w3schools.com/cssref/pr_text_text-indent.asp)
+[Tham khảo tại W3](https://www.w3schools.com/cssref/pr_text_text-indent.asp)
 
 ```html
     <head>
@@ -352,7 +352,7 @@ chân, ...
 ```
 
 ### 4. text-decoration: Sử dụng thuộc tính này để thiết lập hoặc ghỡ bỏ hiệu ứng (gạch chân, gạch đầu,...) cho văn bản.
-[Tham khảo thêm tại W3](https://www.w3schools.com/jsref/prop_style_textdecoration.asp)
+[Tham khảo tại W3](https://www.w3schools.com/jsref/prop_style_textdecoration.asp)
 
 
 
@@ -372,7 +372,7 @@ chân, ...
 ```
 
 ### 5. text-transform: Sử dụng thuộc tính này để chuyển sang chữ thường hoặc chữ hoa.
-[Tham khảo thêm tại W3](https://www.w3schools.com/jsref/prop_style_textdecoration.asp)
+[Tham khảo tại W3](https://www.w3schools.com/jsref/prop_style_textdecoration.asp)
 
 
 
@@ -442,11 +442,8 @@ chân, ...
     * `color` : màu sắc của bóng
 
 ```css
-    p.small{
-        line-height: 90%;
-    }
-    p.big {
-        line-height: 200%;
+    h1 {
+        text-shadow: 2px 2px 8px #FF0000;
     }
 ```
 
@@ -470,7 +467,7 @@ của văn bản
 
 #### 1. Thuộc tính font-family: dùng để xác định font chữ cho văn
 bản.
-[Tham khảo thêm tại W3](https://www.w3schools.com/css/css_font.asp)
+[Tham khảo tại W3](https://www.w3schools.com/css/css_font.asp)
 
 ```css
     p {
@@ -480,7 +477,7 @@ bản.
 ```
 
 #### 2. Thuộc tính `font-size`: dùng để xác định kích thước của chữ cho văn bản. Ta có thể sử dụng đơn vị đo là px, % hoặc em. bản.
-[Tham khảo thêm tại W3](https://www.w3schools.com/css/css_font_size.asp)
+[Tham khảo tại W3](https://www.w3schools.com/css/css_font_size.asp)
 
 ```css
     p.normal {
@@ -492,7 +489,7 @@ bản.
 ```
 
 #### 3. Thuộc tính `font-style`: dùng để xác định kiểu chữ cho văn bản.
-[Tham khảo thêm tại W3](https://www.w3schools.com/css/css_font_style.asp)
+[Tham khảo tại W3](https://www.w3schools.com/css/css_font_style.asp)
 
 ```css
     p.normal {
@@ -504,7 +501,7 @@ bản.
 ```
 
 #### 4. Thuộc tính `font-weight`: dùng để xác định in đậm cho văn bản.
-[Tham khảo thêm tại W3](https://www.w3schools.com/cssref/pr_font_weight.asp)
+[Tham khảo tại W3](https://www.w3schools.com/cssref/pr_font_weight.asp)
 
 ```css
     p.normal {
@@ -516,7 +513,7 @@ bản.
 ```
 
 #### 5. Thuộc tính `font-variant`: dùng để xác định cho văn bản có in chữ hoa nhỏ (small cap) hay không.
-[Tham khảo thêm tại W3](https://www.w3schools.com/css/css_font_style.asp)
+[Tham khảo tại W3](https://www.w3schools.com/css/css_font_style.asp)
 
 ```css
     p.normal {
@@ -526,3 +523,7 @@ bản.
         font-variant: small-caps;
     }
 ```
+
+
+
+
