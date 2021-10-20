@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 50px auto;
+            width: 300px;
+        }
+
+        .container table {
+            background: rgb(255, 155, 208);
+        }
+
+        input {
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <table border="1">
+                <tr>
+                    <td colspan="2">Chương trình tra tuổi</td>
+                </tr>
+                <tr>
+                    <td>Tuổi dương lịch</td>
+                    <td>
+                        <input type="text" id="duonglich">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuổi âm lịch</td>
+                    <td><input type="text" id="amLich"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="reset" value="Xóa">
+                        <input type="submit" value="Tra cứu" onclick="traCuu(); event.preventDefault()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('amLich').readOnly = true;
+        let can = ["Canh", "Tân", "Nhâm", "Quí", "Giáp", "Ất", "Binh", "Đinh", "Mậu", "Kỷ"];
+        let chi = ["Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi"];
+        function traCuu() {
+            let num = document.getElementById('duonglich').value;
+            let str = can[num%10] + " " + chi[num%12];
+            // alert(str);
+            document.getElementById('amLich').value = str;
+        }
+    </script>
+</body>
+
+</html>

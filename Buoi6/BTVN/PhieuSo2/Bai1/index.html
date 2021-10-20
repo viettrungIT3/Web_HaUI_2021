@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <p>Cho bài toán phương trình bậc 2: ax <sup>2</sup> + bx + c = 0 với a=4,b=6, c=2</p> -->
+
+        <p>Cho bài toán phương trình bậc 2: ax <sup>2</sup> + bx + c = 0 với 
+            a= <input type="number" name="" id="valueA" value="4">,
+            b= <input type="number" name="" id="valueB" value="6">, 
+            c= <input type="number" name="" id="valueC" value="2">
+        </p>
+        <button type="button" onclick="myEquation()">Giải</button>
+        <p id="equation"></p>
+    </div>
+
+    <script>
+        function myEquation() {
+
+            let text = "";
+            // const a = 4, b = 6, c = 2;
+
+            const a = document.getElementById("valueA").value;
+            const b = document.getElementById("valueB").value;
+            const c = document.getElementById("valueC").value;
+
+            if (a == 0) {
+                if (b == 0) {
+                    if (c == 0) {
+                        text += "Phương trình vô số nghiệm";
+                    } else {
+                        text += "Phương trình vô nghiệm";
+                    }
+                } else {
+                    const x = -c / (1.0 * b)
+                    text += "Phương trình có 1 nghiệm: " + x;
+                }
+            } else {
+                const del = b*b - 4*a*c;
+                if (del < 0 ) {
+                    text += "Phương trình vô nghiệm";
+                } else if (del == 0) {
+                    const x = -b / (2.0 * a)
+                    text += "Phương trình có 1 nghiệm duy nhất: x = " + x;
+                } else {
+                    let x1, x2;
+                    x1 = (-b - Math.sqrt(del)) / (2.0 * a);
+			        x2 = (-b + Math.sqrt(del)) / (2.0 * a);
+                    text += "Phương trình có nghiệm phân biệt: x1 = " + x1 + " và x2 = " + x2;
+                }
+            }
+
+            document.getElementById("equation").innerHTML = text;
+        }
+
+
+    </script>
+</body>
+
+</html>

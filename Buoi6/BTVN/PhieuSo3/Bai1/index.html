@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            min-width: 600px;
+        }
+
+        .container tr:nth-child(1) input,
+        .container tr:nth-child(2) input {
+            min-width: 50px;
+        }
+
+        .container tr:nth-child(1) input {
+            margin-left: 4px;
+        }
+
+        .container tr:last-child input {
+            margin: 8px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <table>
+                <caption>
+                    <h2>Nhập lần lượt các hệ số của phương trình bậc nhất 2 ẩn:</h2>
+                </caption>
+                <tr>
+                    <th>
+                        <label for="">Nhập a:</label>
+                        <input type="number" id="valueA1">
+                    </th>
+                    <th>
+                        <label for="">Nhập b:</label>
+                        <input type="number" id="valueB1">
+                    </th>
+                    <th>
+                        <label for="">Nhập c:</label>
+                        <input type="number" id="valueC1">
+
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="">Nhập a':</label>
+                        <input type="number" id="valueA2">
+                    </th>
+                    <th>
+                        <label for="">Nhập b':</label>
+                        <input type="number" id="valueB2">
+                    </th>
+                    <th>
+                        <label for="">Nhập c':</label>
+                        <input type="number" id="valueC2">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3" align="center">
+                        <input type="submit" value="Tính" onclick="Tinh(); event.preventDefault()">
+                        <input type="reset" value="Reset">
+                    </th>
+                </tr>
+            </table>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function Tinh() {
+            let tmp = document.getElementsByTagName("input");
+            let a1 = parseFloat(tmp[0].value);
+            let b1 = parseFloat(tmp[1].value);
+            let c1 = parseFloat(tmp[2].value);
+            let a2 = parseFloat(tmp[3].value);
+            let b2 = parseFloat(tmp[4].value);
+            let c2 = parseFloat(tmp[5].value);
+
+            let D = a1 * b2 - b1 * a2;
+            let Dx = c1 * b2 - b1 * c2;
+            let Dy = a1 * c2 - c1 * a2;
+
+            let txt = "";
+            if (D == 0) {
+                if (Dx + Dy == 0)
+                    txt = "Hệ phương trình có vô số nghiệm";
+                else
+                    txt = "Hệ phương trình vô nghiệm";
+            } else {
+                let x = Dx / D;
+                let y = Dy / D;
+                txt = "<br>x = " + x + "<br>y = " + y;
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+
+
+    </script>
+</body>
+
+</html>
