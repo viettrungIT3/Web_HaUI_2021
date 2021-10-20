@@ -1,0 +1,182 @@
+.header {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__logo {}
+
+/* header__right  */
+
+/* header__search  */
+.header__search {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+.header__search input {
+    border: none;
+    outline: none;
+}
+
+/* Header toolbar  */
+.header__toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__toolbar .header__cart {
+    padding: 8px 12px 8px 0;
+}
+
+.header__toolbar .header__notification {
+    padding: 8px 12px;
+}
+
+.header__toolbar .header__login {
+    padding: 8px 12px;
+}
+
+.header__toolbar .header__logout {
+    padding: 8px 0 8px 12px;
+}
+
+/* MAIN  */
+.container {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+}
+
+/* MAIN nav  */
+.nav {
+    width: 200px;
+    border-radius: 3px;
+}
+
+.nav__header {
+    background-color: var(--deeppink-color);
+    color: var(--while-color);
+    padding: 20px;
+}
+
+.nav i {
+    padding-right: 8px;
+}
+
+/* Menu  */
+.nav__menu {
+    position: relative;
+    max-width: 200px;
+}
+
+.nav__item {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d9d9d9;
+}
+
+.nav__item--link {
+    padding-left: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav__item--link:hover {
+    color: var(--green-color);
+}
+
+.nav__item:hover .menu__sub-menu{
+    display: block;
+}
+/* sub-menu  */
+.menu__sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.menu__sub-item a {
+    color: #333;
+}
+.menu__sub-item {
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+}
+
+/* content */
+.content {
+    display: flex;
+}
+
+.content--img img{
+    /* height: 350px; */
+    margin: 0 150px;
+}
+
+.content__desc {
+    /* width: 300px; */
+}
+
+.content__desc h2 {
+    margin: 8px 0;
+}
+
+.content__desc p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.content__desc .content__price {
+    margin-bottom: 8px;
+    color: red;
+}
+.content__desc .content__choose {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.content__btn--size {
+    width: 30px;
+    height: 30px;
+}
+
+.content__desc .content__info {
+    text-decoration: underline;
+    text-align: end;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.content__btn-1, .content__btn-2 {
+    border: 1px solid #000;
+    margin: 8px 0;
+    padding: 8px;
+    text-align: center;
+}
+
+.content__btn-1 {
+    background-color: #000;
+    color: #fff;
+}
+.content__btn-1:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.content__btn-2 {
+    background-color: #fff;
+    color: #000;
+}
+.content__btn-2:hover {
+    background-color: green;
+    color: #000;
+}

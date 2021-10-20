@@ -1,0 +1,29 @@
+.container {
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px 100px;
+    /* border: 1px solid #3333; */
+    box-shadow: 0px 5px 5px 3px #3333;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.th__result , input{
+    border: 1px solid #3333;
+    /* height: 20px; */
+}
+
+.container__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 4px;
+}
