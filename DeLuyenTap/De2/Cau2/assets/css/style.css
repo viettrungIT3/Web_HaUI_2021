@@ -1,0 +1,26 @@
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px 100px;
+    font-size: 18px;
+    border: 1px solid #3333;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px 8px #3333;
+}
+
+input {
+    padding: 4px;
+}
+
+th {
+    font-weight: 600;
+}
+
+button {
+    font-weight: 500;
+    padding: 2px 6px;
+}
+
+#error {
+    color: red;
+}

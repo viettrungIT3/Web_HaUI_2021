@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Nguyễn Việt Trung</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="get" onclick="event.preventDefault()">
+            <table>
+                <tr>
+                    <th><label for="unserName">Username</label></th>
+                    <th>
+                        <input type="text" id="unserName">
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="password">Password</label></th>
+                    <th>
+                        <input type="password" id="password" name="password" title="">
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><div id="error"></div></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button type="submit" onclick="myFunction(); event.preventDefault()">Kiểm tra password</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

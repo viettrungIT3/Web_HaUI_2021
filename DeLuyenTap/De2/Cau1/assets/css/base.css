@@ -1,0 +1,31 @@
+:root {
+    --text-color: #330066;
+    --back-color: #000;
+    --while-color: #fff;
+    --text_bg-color: #66FF66;
+    --text_bg-color-hover: #FFCCCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+button {
+    font-size: 16px;
+}
