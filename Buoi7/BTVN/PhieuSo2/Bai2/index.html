@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="Process.php">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="" id="checkAll""></th>
+                    <th>Order No</th>
+                    <th>Customer name</th>
+                    <th>Order Date</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="" class="check" id="check"></td>
+                    <td>SHD 11</td>
+                    <td>Nguyễn Văn An</td>
+                    <td>12/2/2009</td>
+                    <td><input type="number" value="20000" id="value1"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" class="check" id="check"></td>
+                    <td>SHD 12</td>
+                    <td>Nguyễn Bich Thao</td>
+                    <td>12/11/2009</td>
+                    <td><input type="number" value="55000" id="value2"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center"><b>Total:</b></td>
+                    <td><input type="text" value="" id="result" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="end">
+                        <input type="button" value="Update" onclick="Update()">
+                        <input type="submit" value="Save">
+                        <input type="button" value="Back" onclick="window.history.back()">
+                        <input type="button" value="Reset" onclick="Reset()">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>

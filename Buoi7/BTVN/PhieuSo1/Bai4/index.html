@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td><label for="">Số thứ nhất: </label></td>
+                <td><input type="number" id="number1"></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="button" value="+" onclick="Click(this.value)">
+                    <input type="button" value="-" onclick="Click(this.value)">
+                    <input type="button" value="*" onclick="Click(this.value)">
+                    <input type="button" value="/" onclick="Click(this.value)">
+                    <input type="button" value="^" onclick="Click(this.value)">
+                    <!-- <input type="button" value="^"> -->
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Số thứ hai: </label></td>
+                <td><input type="number" id="number2"></td>
+            </tr>
+            <tr>
+                <td>Kết quả</td>
+                <td><input type="text" id="result" readonly></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        const number1 = document.getElementById("number1");
+        const number2 = document.getElementById("number2");
+        let result;
+
+        function Click(val) {
+            console.log(val);
+            if (val == '^') {
+                document.getElementById("result").value = Math.pow(number1.value, number2.value);
+            } else  {
+                result = number1.value + val + number2.value;
+                document.getElementById("result").value = eval(result);
+            }  
+        }
+
+    </script>
+</body>
+
+</html>

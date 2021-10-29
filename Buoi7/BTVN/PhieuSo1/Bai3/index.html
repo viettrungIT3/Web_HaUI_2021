@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./assets/img/pic_bulboff.gif" alt="" id="img" onclick="myFunction()">
+
+    <script>
+        let count = 0;
+        function myFunction() {
+            let imgChange = document.getElementById("img");
+            count++;
+            count = count % 2;
+            if ( count == 1) {
+                imgChange.src = "./assets/img/pic_bulbon.gif";
+            } else {
+                imgChange.src = "./assets/img/pic_bulboff.gif";
+            }
+        }
+    </script>
+</body>
+</html>
