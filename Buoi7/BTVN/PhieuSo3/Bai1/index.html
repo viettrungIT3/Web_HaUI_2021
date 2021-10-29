@@ -29,20 +29,27 @@
 <body>
     <b>Mouse over the sqaures and the background color will change!</b>
     <div class="container">
-        <div class="square red" onmouseover="onChangeBgRed()"></div>
-        <div class="square blue" onmouseover="onChangeBgBlue()"></div>
-        <div class="square green" onmouseover="onChangeBgGreen()"></div>
+        <div class="square red" onmouseover="onChangeBgRed()" onmouseout="resetColor()"></div>
+        <div class="square blue" onmouseover="onChangeBgBlue()" onmouseout="resetColor()"></div>
+        <div class="square green" onmouseover="onChangeBgGreen()" onmouseout="resetColor()"></div>
     </div>
 
     <script>
         function onChangeBgRed() {
-            document.body.classList.add("red");
+            document.body.style.background = "red";
+            document.body.style.transition = "1s";
         }
         function onChangeBgBlue() {
-            document.body.classList.add("blue");
+            document.body.style.background = "blue";
+            document.body.style.transition = "1s";
         }
         function onChangeBgGreen() {
-            document.body.classList.add("green");
+            document.body.style.background = "green";
+            document.body.style.transition = "1s";
+        }
+        function resetColor() {
+            document.body.style.background = "white";
+            document.body.style.transition = "1s";
         }
     </script>
 </body>
