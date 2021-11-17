@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header,
+.footer {
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+}
+
+.main .menu {
+    width: 20%;
+}
+
+.main .menu ul {
+    display: block;
+}
+
+.main .menu ul li {
+    list-style: none;
+    background-color: rgb(172, 35, 49);
+    padding: 10px 0px;
+    /* margin-bottom: 1px; */
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.main .menu ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.main .menu ul li:hover {
+    background-color: red;
+    transition: 0.4S;
+}
+
+.main .menu ul li:hover a {
+    color: yellow;
+}
+
+.main .menu ul li .sub-menu {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    margin-left: 1px;
+    display: none;
+}
+
+.main .menu ul li:hover .sub-menu {
+    display: block;
+}
+
+.main .register {
+    width: 80%;
+    height: 100%;
+    margin: 10px 10% 0 ;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+}
+
+.main .register form {
+    width: 70%;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main .register form table {
+    width: 100%;
+    padding: 8px;
+}
+
+.main .register form table tr {
+    /* margin: 25px; */
+}
+
+.main .register form table th.left {
+    width: 30%;
+    text-align: right;
+    padding: 10px;
+}
+
+.main .register form table th.right {
+    width: 70%;
+}
+
+.main .register form table th.right input {
+    width: 100%;
+    padding: 4px 0;
+}
+
+.main .register form table th.gender {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main .register .btn {
+    padding: 5px;
+    cursor: pointer;
+}
