@@ -4,7 +4,7 @@ function myFunction() {
     let result = "";
     for (let i = 0; i < st.length; i++) {
         if (st[i] >= 'A' && st[i] <= 'Z') {
-            result += st[i].toLocaleLowerCase();
+            result += st[i].toLowerCase();
         } 
         if (st[i] >= 'a' && st[i] <= 'z') {
             result += st[i].toUpperCase();
