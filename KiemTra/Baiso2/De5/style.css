@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header,
+.footer {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+}
+
+.main .menu {
+    width: 20%;
+}
+
+.main .menu ul {
+    display: block;
+}
+
+.main .menu ul li {
+    list-style: none;
+    background-color: rgb(29, 162, 97);
+    padding: 10px 0px;
+    /* margin-bottom: 1px; */
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.main .menu ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.main .menu ul li:hover {
+    background-color: red;
+    transition: 0.4S;
+}
+
+.main .menu ul li:hover a {
+    color: yellow;
+}
+
+.main .menu ul li .sub-menu {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    display: none;
+    margin-left: 1px;
+}
+
+.main .menu ul li:hover .sub-menu {
+    display: block;
+}
+
+.main .form {
+    width: 80%;
+    height: 100%;
+    margin-top: 10px;
+    margin-right: 75px;
+    margin-left: 150px;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+}
+
+.main .form form {
+    width: 70%;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main .form form table {
+    width: 100%;
+    padding: 8px;
+}
+
+.main .form caption {
+    margin: 5px;
+}
+
+.main .form input {
+    width: 100%;
+    padding: 5px;
+    margin: 8px;
+}
+
+.main .form button {
+    padding: 5px 15px;
+}
