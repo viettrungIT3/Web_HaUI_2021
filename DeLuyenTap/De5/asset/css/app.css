@@ -1,0 +1,16 @@
+@import './base.css';
+@import './style.css';
+
+:root {
+    --text-color: #333;
+    --back-color: #000;
+    --while-color: #fff;
+    --pink-color: #FF3399;
+    --pink-color2: #FFCCFF;
+    --pink-color3: #FF33CC;
+    --pink-color4: #FF66FF;
+    --yellow-color: #FFCC33;
+    --grey-color: #999999;
+    --green-color: #33CC66;
+    --orange-color: #FF6666 ;
+}
