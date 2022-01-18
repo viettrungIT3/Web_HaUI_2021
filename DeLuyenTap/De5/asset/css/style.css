@@ -84,6 +84,7 @@
 .header-nav__search--btn {
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .header-nav__search--icon {
