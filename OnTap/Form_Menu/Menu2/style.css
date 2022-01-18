@@ -1,0 +1,91 @@
+:root {
+    --menu-bgcolor: rgb(172, 35, 49);
+    --menu-color: white;
+    --menu-hover-bgcolor: red;
+    --menu-hover-color: yellow;
+    --boder-color: rgba( 0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item{
+    width: 100%;
+    background: var(--menu-bgcolor);
+    position: relative;
+}
+
+.item--link{
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    color: var(--menu-color);
+    padding: 10px;
+    border: 1px solid var(--boder-color);
+}
+
+.item:hover{
+    background: var(--menu-hover-bgcolor);
+}
+
+.item--link:hover{
+    background: var(--menu-hover-bgcolor);
+    color: var(--menu-hover-color);
+}
+
+/* Sub menu */
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 75%;
+    display: none;
+}
+
+.item:hover .sub-menu{
+    display: block;
+}
+
+.sub-item{
+    width: 100%;
+    background: var(--menu-bgcolor);
+}
+
+.sub-item--link{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: var(--menu-color);
+    padding: 8px;
+    border: 1px solid var(--boder-color);
+}
+
+.sub-item:hover{
+    background: var(--menu-hover-bgcolor);
+}
+
+.sub-item--link:hover{
+    background: var(--menu-hover-bgcolor);
+    color: var(--menu-hover-color);
+}
+
+
+
