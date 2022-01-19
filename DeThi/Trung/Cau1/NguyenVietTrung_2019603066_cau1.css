@@ -1,0 +1,257 @@
+:root {
+    --text-color: #333;
+    --back-color: #000;
+    --while-color: #fff;
+    --blue-color: #336699;
+
+    /* --pink-color: #FF3399; */
+    /* --yellow-color: yellow; */
+    /* --red-color: red; */
+    /* --grey-color: #999999; */
+    /* --green-color: #33CC66; */
+    /* --orange-color: #FF6666 ; */
+    /* Menu */
+    --menu-bgcolor: #000;
+    --menu-color: #fff;
+    --menu-hover-bgcolor: #FF3399;
+    --menu-hover-color: #336699;
+    /* boder */
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    padding: 10px 20px;
+    background: var(--blue-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--logo {
+    height: 50px;
+    width: 50px;
+}
+
+.header__search {
+    margin: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--while-color);
+
+}
+
+.header__search--input,
+.header__search--select {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+.header__search--select {}
+
+.header__search--btn {
+    outline: none;
+    border: none;
+    background: var(--back-color);
+    color: var(--while-color);
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.header__search--icon {
+    padding: 12px;
+    font-size: 1.2rem;
+    background: var(--yellow-color);
+}
+
+.header__cart {
+    color: var(--while-color);
+    font-size: 20px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 20px 32px;
+    height: 100%;
+}
+
+.header__cart i {
+    padding-left: 8px;
+    font-size: 28px;
+}
+
+.header__info {
+    color: var(--while-color);
+    font-size: 20px;
+    padding: 20px 50px;
+    height: 100%;
+}
+
+.header__info i {
+    padding-left: 8px;
+    font-size: 42px;
+}
+
+.main {
+    display: flex;
+}
+
+/* Menu */
+/* Menu  */
+.menu {
+    width: 200px;
+    margin: 8px;
+    border: 1px solid var(--blue-color);
+}
+
+.item {
+    position: relative;
+}
+
+.item-title .item--link {
+    background: var(--blue-color) !important;
+    color: var(--while-color) !important;
+}
+
+.item--link {
+    padding: 12px 8px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+}
+
+.item--link:hover {
+    color: var(--menu-hover-color);
+}
+
+.item--btn {
+    width: 20px;
+}
+
+/* Sub menu  */
+.sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 8px 0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: var(--while-color);
+    display: none;
+}
+
+.item:hover .sub-menu {
+    display: block;
+}
+
+
+.sub-item--link {
+    display: block;
+    width: 200px;
+    padding: 8px 32px 8px 16px;
+}
+.sub-item:nth-child(1) {
+    font-weight: 600;
+}
+
+.sub-item--link:hover {
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+
+
+/* product */
+.container-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wapper-card {
+    width: 25%;
+}
+
+.card {
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    font-family: arial;
+}
+
+.card--link {
+    text-decoration: none;
+    display: inherit;
+    color: inherit;
+}
+
+.card--img {
+    width: 80%;
+}
+
+.card--img:hover {
+    transform: scale(1.2);
+}
+
+.card--title {
+    border-bottom: 1px solid var(--border-color);
+    padding: 4px 0;
+}
+
+.card--price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card--desc {
+    /* text-align: left; */
+}
+
+.card--btn {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card .card--btn:hover {
+    opacity: 0.7;
+}
+
