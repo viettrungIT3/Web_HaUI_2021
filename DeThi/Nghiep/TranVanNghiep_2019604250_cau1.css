@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.imgs {
+  width: 30px;
+  height: 30px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  color: white;
+  padding: 0 20px;
+}
+
+.top-header .left {}
+.top-header .right {}
+.top-header .right a {
+  color: white;
+  display: inline-block;
+  padding: 8px 16px 8px 0;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.bottom-header .h-logo{
+  width: 200px !important;
+}
+.bottom-header .search{
+  border: 5px solid yellow;
+  border-radius: 30px;
+}
+.bottom-header .search input{
+  border: none;
+  outline: none;
+  margin: 16px 32px;
+  width: 300px;
+}
+.bottom-header .contacts{
+  text-align: center;
+  font-size: 1.4rem;
+}
+.bottom-header .contacts:hover{
+  color: red;
+  cursor: pointer;
+}
+.bottom-header img{
+  width: 100px;
+}
+
+.container {
+  display: flex;
+}
+.container .menu-box {
+  background:#CCCCCC;
+  width: 20%;
+  min-width: 200px;
+}
+
+.container .menu-box .menu {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.container .menu-box .menu > li {
+  position: relative;
+  padding: 7px 0;
+  cursor: pointer;
+}
+.container .menu-box .menu > li > a {
+  padding: 0px 10px;
+  color: black;
+}
+
+.container .menu-box .menu > li:hover > a {
+  color: #FFFF00;
+}
+.container .menu-box .menu > li > .sub-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 70%;
+  display: none;
+}
+.container .menu-box .menu > li:hover > .sub-menu {
+  display: block;
+  background:#fff;
+}
+
+.container .menu-box .menu > li > .sub-menu > li {
+  padding: 7px 0;
+}
+.container .menu-box .menu > li > .sub-menu > li > a {
+  padding: 7px 10px;
+  color: black;
+}
+.container .content {
+  width: 80%;
+  margin: 50px;
+}
+.container .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .content .box {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.container .content .box img {
+  width: 200px;
+  height: 400px;
+}
+.title-product {
+  padding: 7px;
+  color: black;
+  font-weight: 600;
+}
+.title-product:hover {
+  color: red;
+}
+.box-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+}
+.box-price .left {
+}
+.box-price .left .price {
+  color: red;
+}
+.box-price .left .sale {
+  color: white;
+  background-color: red;
+  padding: 3px;
+  border-radius: 5px;
+}
+.box-price .left .old-price {
+  text-decoration: line-through;
+}
+.box-price .right {
+}
+.box-price .right img {
+  width: 30px !important;
+  height: 30px !important;
+}
