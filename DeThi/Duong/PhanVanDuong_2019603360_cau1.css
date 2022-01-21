@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-logo{
+    width: 200px;
+}
+
+.h-search input{
+    padding: 8px 16px;
+    border: 1px solid #999999;
+    outline: none;
+    width: 300px;
+}
+
+.h-cart {
+    display: flex;
+    align-items: center;
+}
+
+.h-cart img{
+    width: 50px;
+}
+
+.h-cart span {
+    text-align: center;
+}
+.h-cart b:hover {
+    color: #00CC33;
+}
+
+menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00CC33;
+}
+
+menu .menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: inline-block;
+    padding: 16px;
+    border-right: 1px solid #fff;
+}
+.menu > li:hover > a {
+    background-color: green;
+}
+.menu > li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #00CC33;
+    display: none;
+}
+
+.sub-menu a {
+    border-top: 1px solid #fff;
+    display: block;
+    padding: 8px;
+}
+
+menu .m-search input {
+    padding: 12px 16px;
+    margin: 4px;
+}
+
+.content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.content .left {
+    padding: 8px 16px;
+}
+.content .left .ct-search input{
+    padding: 8px 16px;
+    width: 100%;
+}
+.content .left .title{
+    margin: 16px 0;
+    padding: 4px 0;
+    background-color: #999999;
+    border-radius: 5px;
+    color: #00CC33;
+}
+.content .left .title:hover{
+    background-color: yellow;
+    border-radius: 5px;
+    color: red;
+}
+.content .left {}
+.content .left {}
+
+.content .right {
+    flex: 1;
+}
+.content .right .hr{
+    margin-top: 30px;
+    border-bottom: 2px solid chocolate;
+}
+
+.content .right .product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.content .right .box{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content .right .box-img{
+    border: 1px solid #999999;
+}
+.content .right .img{
+    max-width: 300px;
+    padding: 16px;
+}
+.content .right .name{
+    margin: 30px;
+}
