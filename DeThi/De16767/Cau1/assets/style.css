@@ -1,0 +1,151 @@
+:root {
+    --text-color: #333;
+    --while-color: #fff;
+    --black-color: #000;
+    --light-blue-color: #0033CC;
+    --light-blue2-color: #33CCFF;
+    --light-blue3-color: #33FFFF;
+    --dark-blue-color: #0066FF;
+    --yellow-color: yellow;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+.header{
+
+}
+.header-banner{
+    background: url('./img/bg_header.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.header-banner .container{
+    display: flex;
+    align-items: center;
+}
+.header-banner__logo{
+    width: 150px;
+}
+.header-banner__main{
+    text-align: center;
+    flex: 1;
+}
+.header-banner__main--name{
+    color: var(--light-blue-color);
+}
+.header-banner__main--address{
+    color: var(--black-color);
+    font-size: 20px;
+}
+
+/* Header nav */
+.header-nav{
+    background: var(--light-blue2-color);
+}
+.header-nav .container{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+}
+.header-nav__main{
+
+}
+.header-nav__main-item{
+    color: var(--while-color);
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: 1px solid var(--while-color);
+    text-transform: uppercase;
+}
+
+.header-nav__search{
+    margin-right: 30px;
+}
+.header-nav__search-input{
+    padding: 8px 16px;
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Main */
+.main{
+
+}
+.main .container{
+
+}
+.menu{
+    width: 300px;
+}
+.item{
+    background: var(--light-blue3-color);
+    position: relative;
+}
+.item:nth-child(1) ,
+.item:nth-child(1) a{
+    background: var(--dark-blue-color) !important;
+    padding-left: 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none !important;
+}
+.item--link{
+    font-size: 18px;
+    padding: 8px 16px;
+    display: inline-block;
+    color: var(--while-color);
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid var(--while-color);
+}
+.item--link:hover {
+    color: var(--yellow-color);
+}
+
+.sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 250px;
+    display: none;
+}
+
+.item:hover .sub-menu {
+    display: block;
+}
+
+.sub-item {
+    background: var(--light-blue3-color);
+}
