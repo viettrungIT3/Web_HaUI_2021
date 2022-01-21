@@ -1,0 +1,205 @@
+:root {
+    --back-color: #000;
+    --while-color: #fff;
+    --pink-color: #FF3399;
+    --yellow-color: yellow;
+    --red-color: red;
+    /* Menu */
+    --menu-bgcolor: #000;
+    --menu-color: #fff;
+    --menu-hover-bgcolor: #FF3399;
+    --menu-hover-color: #fff;
+    --menu2-bgcolor: #fff;
+    --menu2-color: #000;
+    /* boder */
+    --border-color: rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+}
+
+.header .logo {
+    width: 10%;
+}
+
+.search {
+    margin: 8px;
+    border: 1px solid #999999;
+    overflow: hidden;
+    background: #fff;
+
+}
+
+.search-input,
+.search-select {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+.search-select {
+    border-left: 1px solid #999;
+}
+
+.search-btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 20px;
+    /* height: inherit; */
+    /* background: #000; */
+    /* color: #fff; */
+}
+
+.search-icon {
+    padding: 12px;
+    font-size: 1.2rem;
+    background: yellow;
+}
+
+.other {
+    padding: 8px 16px;
+    background: #FF3399;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.other:hover {
+    background: yellow;
+    color: red;
+    font-weight: 600;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.item {
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+.item-link {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.item:hover {
+    background: #FF3399;
+}
+
+/* Sub menu */
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 75%;
+    list-style: none;
+    display: none;
+}
+
+.item:hover .sub-menu {
+    display: block;
+}
+
+.sub-item {
+    width: 100%;
+    background: #fff;
+}
+
+.sub-item-link {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* nav */
+.content{
+    display: flex;
+    margin-top: 20px;
+}
+.navbar{
+    width: 300px;
+    display: block;
+    padding: 16px;
+}
+.nav-link{
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+.nav-title{
+}
+.nav-link.nav-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 6px 0;
+
+}
+.nav-link.nav-link-active{
+    font-weight: bold;
+}
+
+.title{
+
+}
+.wapper{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    flex: 1;
+    margin: 4px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #003366;
+}
+
+.box h3 {
+    margin: 8px 0;
+    color: #FFFF66
+}
+.price{
+    padding-bottom: 10px;
+}
